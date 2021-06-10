@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <title>Haru Player</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<!--codigo para recrear un reproductor con multiples canciones-->
+
+<body>
+    
+    <div class="container">
+        <div class="player"> <!--reproductor -->
+            <div class="player_controls top-bar"> <!-- botones controladores de cabecera-->
+                <div class="player_btn player_btn--small" >
+                    <i id="repeat-plist" class="fa fa-random" aria-hidden="true"></i>
+                </div>
+
+                <h5 class="player_title">Playing now</h5>
+                <div class="player_btn player_btn--small">
+                    <i class="fas fa-music" id="more-music"></i>
+                </div>
+            </div>
+
+            <div class="img_area" >
+                <img src="" alt=""  class="ima" >
+            </div>
+
+            <div class="detail_song">
+                <p class="player_song"></p>
+                <p class="player_artist"></p>    
+            </div>
+            <!-- barra de musica-->
+                 <div class="progress-area">
+                    <div class="progress-bar">
+                        <audio id="main-audio" src=""></audio>
+                    </div>
+                    <div class="song-timer">
+                        <span class="current-time">0:00</span>
+                        <span class="max-duration">0:00</span>
+                    </div>
+                
+                 </div>
+            
+            <div class="player_controls"> <!-- botones controladores de musica-->
+                 <i class="fas fa-backward player_btn player_btn--medium" id="prev"></i>
+
+                <div class="play-pause">
+                    <i class="fas fa-play player_btn player_btn--medium" id="play" ></i>
+                </div>
+
+                <i class="fas fa-forward player_btn player_btn--medium" id="next" ></i>
+            </div>
+
+        </div>
+    </div>
+    <!--lista de canciones-->
+    <div class="music-list">
+        <div class="header">
+            <div class="row">
+                <span>Music List</span>
+            </div>
+            <i id="close" class="fa fa-times" aria-hidden="true"></i>
+        </div>
+        <ul>
+            <!-- lista de musica-->
+        </ul>
+    </div>
+    <script src="music-list.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+
+<!--by la poderosisima Babayanga-->
